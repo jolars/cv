@@ -1,0 +1,496 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode,pdfusetitle}{hyperref}
+\PassOptionsToPackage{hyphens}{xurl}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  10pt,
+  headsepline=true,
+  english,
+  DIV=12
+]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+
+\usepackage{upquote} %straight quotes in verbatim environments
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+
+\usepackage{xcolor}
+\usepackage{bookmark}
+\usepackage{csquotes}
+
+\setlength\parindent{0in}
+
+% tables and lists
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\usepackage{graphicx}
+
+% Capheight
+\newlength{\capheight}
+% Create the reference text for measures
+\settoheight{\capheight}{B}
+
+% bibliography
+\usepackage[
+  backend      = biber,
+  sorting      = ydnt,
+  style        = ieee,
+  defernumbers = true
+]{biblatex}
+\addbibresource{assets/publications.bib}
+
+\usepackage{xurl}
+
+% Make my name bold in references
+\renewcommand*{%
+  \mkbibnamegiven
+}[1]{\ifitemannotation{highlight}{\textbf{#1}}{#1}}
+\renewcommand*{%
+  \mkbibnamefamily
+}[1]{\ifitemannotation{highlight}{\textbf{#1}}{#1}}
+
+% HEADERS AND FOOTERS
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\lohead[]{CV}
+\rohead[]{Johan Larsson}
+
+% HYPERREF
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle   = {CV},
+  pdfauthor  = {Johan Larsson},
+  colorlinks = true,
+  linkcolor  = NavyBlue,
+  citecolor  = NavyBlue,
+  urlcolor   = NavyBlue,
+  breaklinks = true
+}
+
+\usepackage{tikz}
+
+\usepackage{academicons}
+\usepackage{fontawesome}
+
+\date{\today}
+\title{Johan Larsson}
+
+\usepackage{calc}
+
+\setlist[description]{
+  font        = \rmfamily\footnotesize,
+  parsep      = 0.3ex,
+  align       = parleft,
+  labelwidth  = \widthof{2020 -- 2018} + 1em,
+  itemindent  = 0em,
+  leftmargin  = \widthof{2020 -- 2018} + 1em,
+  labelindent = 0em,
+  labelsep    = 0em
+}
+
+% Colors
+\definecolor{darkgray}{gray}{0.3}
+
+\begin{document}
+
+\begin{titlepage}
+\end{titlepage}
+
+  \begin{center}
+  {\itshape \large \textcolor{darkgray}{CV}}
+  \medskip
+
+  \noindent {\huge \sffamily \bfseries Johan Larsson}
+  \smallskip
+
+  \noindent {\large \today}
+  \end{center}
+% \begin{minipage}{0.5\textwidth}
+%   \raggedleft
+%   \begin{tikzpicture}
+%     \begin{scope}
+%       \clip [rounded corners=1cm] (0,0) rectangle coordinate (centerpoint)
+%       (2,2cm);
+%       \node [inner sep=0pt] at (centerpoint) {\includegraphics[width=2cm,
+%           height=2cm]{assets/profilbild}};
+%     \end{scope}
+%   \end{tikzpicture}
+% \end{minipage}
+
+\vskip 1.5\baselineskip
+
+\begin{minipage}[t]{.5\textwidth}
+  \small
+  \itshape
+  \noindent
+  Holger Crafoords Ekonomicentrum 1\\
+  Tycho Brahes väg 1\\
+  Box 743, 2207 Lund, Sweden
+  \vspace{1ex}\\
+  \href{mailto:johan.larsson@stat.lu.se}{johan.larsson@stat.lu.se}\\
+  +46 730353836
+
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  \raggedleft\itshape\small
+  \href{https://larssonjohan.com}{larssonjohan.com}\\
+  {\aiOrcid}\, \href{https://orcid.org/0000-0002-4029-5945}{orcid.org/0000-0002-4029-5945}\\
+  {\aiResearchGate}\, \href{https://www.researchgate.net/profile/Johan_Larsson7}{researchgate.net/profile/Johan\_Larsson7}\\
+  {\aiPublons}\, \href{https://publons.com/a/1299032}{publons.com/a/1299032}\\
+  {\faGithub}\, \href{https://github.com/jolars}{github.com/jolars}
+\end{minipage}
+
+%\tableofcontents
+
+\hypertarget{education}{%
+  \section{Education}\label{education}}
+
+% \hypertarget{degrees}{%
+% \subsection{Degrees}\label{degrees}}
+
+\begin{description}
+  \item[2018 -- now] {
+        \textbf{PhD in Statistics}, \emph{Department of Statistics, Lund
+          University}
+
+        Supervisor: \emph{Jonas Wallin}
+        }
+
+  \item[2018] {
+        \textbf{Bachelor's Degree in Statistics}, \emph{Lund University}
+
+        Supervisor: \emph{Peter Gustafsson}
+
+        Title: \emph{eulerr: Area-proportional euler diagrams with ellipses}
+        }
+
+  \item[2015 -- 2017] {
+        \textbf{Master's Degree in Medical Science}, \emph{Lund University}
+
+        Supervisor: \emph{Eva-Maj Malmström}
+
+        Title: \emph{Gym-based exercise therapy for patients with persistent
+          neck pain: A research protocol for a randomized controlled trial}
+        }
+
+  \item[2011 -- 2014] {
+        \textbf{Bachelor's Degree in Physical Therapy}, \emph{Lund University}
+
+        Supervisor: \emph{Amanda Lundvik Gyllensten}
+
+        Title: \emph{The professional role and technology use among physical
+          therapists in Tokyo: A qualitative interview study}
+        }
+\end{description}
+
+% \hypertarget{courses}{%
+% \subsection{Courses}\label{courses}}
+
+% \begin{description}
+%     \item[2020] {
+%         \textbf{Convex Optimization I}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Course Design in Higher Education}, \emph{4 ECTS, Lund University}
+
+%         \textbf{Advanced Bayesian Learning}, \emph{7. ECTS, Stockholm University}
+%     }
+
+%     \item[2019] {
+%         \textbf{Sequential Monte Carlo Methods}, \emph{6 ECTS, Uppsala University}
+
+%         \textbf{Teaching in Higher Education}, \emph{4 ECTS, Lund University}
+
+%         \textbf{Mathematical Statistics: Probability Theory}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistical Inference}, \emph{15 ECTS, Swedish Network for Graduate and Postgraduate Education in Statistics, Sweden}
+
+%         \textbf{Statistics: Multivariate Analysis}, \emph{7.5 ECTS, Lund University}
+%     }
+%     \item[2018] {
+%         \textbf{Data Mining and Visualization}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Linux Development Environment}, \emph{7.5 ECTS, Umeå University}
+
+%         \textbf{Statistical Methods with R}, \emph{7.5 ECTS, Karolinska Institute}
+%     }
+%     \item[2017] {
+%         \textbf{Statistics: Bayesian Methods}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistics: Probability and Inference Theory}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistics: Special Assignment}, \emph{15 ECTS, Lund University}
+
+%         \textbf{Statistics: Econometrics}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistics: Time Series Analysis}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistics: Statistical Theory}, \emph{7.5 ECTS, Lund University}
+
+%         \textbf{Statistics: Sampling Techniques}, \emph{7.5 ECTS, Lund University}
+%     }
+%     \item[2016] {
+%         \textbf{Statistics: Basic Course}, \emph{30 ECTS, Lund University}
+%     }
+%     \item[2014 -- 2015] {
+%         \textbf{Summer Research School}, \emph{18 ECTS, Faculty of Medicine, Lund University}
+
+%         I worked as a research assistant at a specialized clinic for pain rehabilitation and presented a poster at EFIC in 2015 and IASP in 2016.
+%     }
+%     \item[2013 -- 2014] {
+%         \textbf{Summer Research Scholarship}, \emph{15 ECTS, Faculty of
+%         Medicine, Lund University}
+
+%         As a part of a stipend, I undertook a course in basic academic knowledge.
+%     }
+% \end{description}
+
+% \hypertarget{miscellaneous}{%
+% \subsection{Miscellaneous}\label{miscellaneous}}
+
+% \begin{description}[
+%     labelwidth = \widthof{2016} + 1em,
+%     leftmargin = \widthof{2016} + 1em,   
+% ]
+%     \item[2017] \textbf{Network Analysis}, \emph{SBU, Stockholm, Sweden}
+%     \item[2016] \textbf{Conducting Systematic Reviews}, \emph{HTA-0, Malmö, Sweden}
+% \end{description}
+
+% \hypertarget{professional-experience}{%
+% \section{Professional Experience}\label{professional-experience}}
+
+% \begin{description}
+% \item[2017 -- 2018] {
+%     \textbf{Physical Therapist}, \emph{The Department of Orofacial Pain and Jaw Function, Malmö University}
+
+%     %Clinical work and quantitative assessment of sensory function.
+% }
+% \item[2014 -- 2018] {
+%     \textbf{Physical Therapist}, \emph{Vårdcentralen Södra Sandby, Region Skåne}
+
+%     %Clinical work at a primary care center in southern Skåne.
+% }
+% \end{description}
+
+\hypertarget{research}{%
+  \section{Research}\label{research}}
+
+\begin{description}
+  \item[2015 -- 2018] {
+        \textbf{Research Assistant}, \emph{SensoriMotor Integration Lund
+          (SMIL): collaborative effort between Lund University, Skåne University
+          Hospital, Malmö University, and Umeå University}
+        }
+  \item[2015] {
+        \textbf{Research Assistant}, \emph{The Department of Pain
+          Rehabilitation, Skåne University Hospital}
+
+        % Together with supervisors Eva-Maj Malmström and Hans Westergren I studied patients with longstanding whiplash-associated disorders, which resulted in one publication and two poster presentations.
+        }
+  \item[2014] {
+        \textbf{Research Assistant}, \emph{Department of Clinical Sciences,
+          Lund University}
+
+        % As part of a research stipend from the Faculty of Medicine at Lund University, I -- under supervision of Eva-Ekvall Hansson and Michael Miller -- studied the gait of dizzy, elderly patients. This work resulted in two publications.
+        }
+\end{description}
+
+\section{Scholarships}
+\begin{description}
+  \item[2018] {
+        \textbf{Google Summer of Code}, \emph{The R Project for Statistical
+          Computing}
+
+        Project:
+        \emph{\href{https://summerofcode.withgoogle.com/archive/2018/projects/6276491595743232/}{Fast
+            Sparse Linear Models for Big Data with SAGA}}
+        }
+\end{description}
+
+\hypertarget{publications}{%
+  \section{Publications}\label{publications}}
+
+\nocite{*}
+
+\printbibliography[title=Published
+  Articles,heading=subbibnumbered,keyword=published-article]
+\printbibliography[title=Unpublished
+  Articles,heading=subbibnumbered,keyword=unpublished-article]
+\printbibliography[title=Theses,heading=subbibnumbered,keyword=thesis]
+%\printbibliography[title=Conference Papers,heading=subbibnumbered,keyword=conference-paper]
+\printbibliography[title=Conference
+  Abstracts,heading=subbibnumbered,keyword=conference-abstract]
+
+\hypertarget{teaching}{%
+  \section{Teaching}\label{teaching}}
+
+\subsection{Instructor}
+
+\begin{description}
+  \item[2020--2021]{
+        \textbf{Data Visualization}, \emph{Department of Statistics, Lund
+          University}
+        }
+  \item[2019--2021]{
+        \textbf{Statistics: Basic Course}, \emph{Department of Statistics, Lund
+          University}
+
+        % An undergraduate level course in basic statistics that I served as a teaching assistant and lecturer for.
+        }
+\end{description}
+
+\subsection{Teaching Assistant}
+
+\begin{description}
+
+  \item[2019--2020]{
+        \textbf{Data Mining and Visualization}, \emph{Department of Statistics,
+          Lund University}
+
+        % A graduate level course in statistical learning that I served as a teaching assistant for. I redesigned the lab activities.
+        }
+
+  \item[2019]{
+        \textbf{Artificial Intelligence and Deep Learning Methods},
+        \emph{Department of Statistics, Lund University}
+
+        % A graduate level course in deep learning that I served as a teaching assistant for.
+        }
+        % \item[2016 -- 2018]{
+        %     \textbf{Teaching Assistant}, \emph{Department of Physiotherapy, Lund University}
+
+        %     % I served as a teaching assistant for students at the program of medicine.
+        % }
+\end{description}
+
+\subsection{Course Development}
+
+\begin{description}
+  \item[2020]{
+        \textbf{Data Visualization}, \emph{Department of Statistics, Lund
+          University}
+
+        Design of a distance-based course in data visualization for students on
+        the undergraduate level.
+        }
+\end{description}
+
+\hypertarget{supervision}{%
+  \section{Supervision and Mentorship}\label{supervision}}
+
+\begin{description}
+  \item[2019 -- 2021]{
+        \textbf{Google Summer of School}
+
+        Students:
+        \emph{
+          \href{
+            https://summerofcode.withgoogle.com/archive/2019/projects/4654960430546944/
+          }{
+            QinchengLiu (2019)
+          },
+          \href{
+            https://summerofcode.withgoogle.com/dashboard/project/5459519376719872/overview
+          }{
+            AkarshGoyal (2020)
+          }
+        }
+        }
+  \item[2017 -- 2019] {
+        \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
+          Orofacial Pain and Jaw Function, Malmö University}
+
+        % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
+        }
+  \item[2017 -- 2018] {
+        \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
+          Orofacial Pain and Jaw Function, Malmö University}
+
+        % Supervision of two students at master's level for a project about biofeedback and posture.
+        }
+\end{description}
+
+\hypertarget{reviewer}{%
+  \section{Referee Service}\label{reviewer}}
+
+\begin{itemize}
+  \item Gait \& Posture (ISSN: 0966-6362)
+  \item Journal of Clinical Interventions in Aging (ISSN: 1178-1998)
+  \item Spine (ISSN: 0362-2436)
+  \item Archives of Physical Medicine and Rehabilitation (ISSN: 0003-9993)
+\end{itemize}
+See \href{http://publons.com/a/1299032}{publons.com/a/1299032} for
+additional information.
+
+\section{Comittee Service}
+\begin{description}[
+    labelwidth = \widthof{2020} + 1em,
+    leftmargin = \widthof{2020} + 1em,
+  ]
+  \item[2020]{
+        \textbf{Statistical Learning Seminar Series},
+        \url{https://statistical-learning-seminars.github.io/}
+
+        Member of organizational committee
+        }
+\end{description}
+
+\hypertarget{talks}{%
+  \section{Talks}\label{talks}}
+
+\begin{description}[
+    labelwidth = \widthof{2018, June 18} + 1em,
+    leftmargin = \widthof{2018, June 18} + 1em,
+  ]
+  \item[2021, Sep 9] {\textbf{Look-Ahead Screening Rules for the Lasso},
+    \emph{EYSM 2021}}
+  \item[2020, May 8] {
+        \textbf{The Strong Screening Rule for SLOPE}, \emph{Statistical
+          Learning Seminar}
+        }
+  \item[2018, June 18] {
+        \textbf{A Case Study in Fitting Area-Proportional Euler Diagrams with
+          Ellipses Using eulerr}, \emph{SetVR 2018}
+        }
+\end{description}
+
+\hypertarget{software}{%
+  \section{Software}\label{software}}
+
+\begin{description}[
+    labelwidth = \widthof{qualpalr} + 1em,
+    leftmargin = \widthof{qualpalr} + 1em,
+  ]
+  \item[SLOPE] {
+        Generalized Linear Models Penalized with SLOPE
+
+        \url{https://CRAN.R-project.org/package=SLOPE}
+        }
+  \item[sgdnet] {
+        Elastic Net-regularized Generalized Linear Models via the efficient
+        SAGA algorithm
+
+        \url{https://github.com/jolars/sgdnet}
+        }
+  \item[eulerr] {
+        Area-Proportional Euler diagrams with ellipses
+
+        \url{https://CRAN.R-project.org/package=eulerr}
+        }
+  \item[qualpalr] {
+        Automatic generation of qualitative color palettes using color
+        difference algorithms
+
+        \url{https://CRAN.R-project.org/package=tactile}
+        }
+
+\end{description}
+\end{document}
