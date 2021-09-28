@@ -114,33 +114,20 @@
 
   \noindent {\large \today}
 \end{center}
-% \begin{minipage}{0.5\textwidth}
-%   \raggedleft
-%   \begin{tikzpicture}
-%     \begin{scope}
-%       \clip [rounded corners=1cm] (0,0) rectangle coordinate (centerpoint)
-%       (2,2cm);
-%       \node [inner sep=0pt] at (centerpoint) {\includegraphics[width=2cm,
-%           height=2cm]{assets/profilbild}};
-%     \end{scope}
-%   \end{tikzpicture}
-% \end{minipage}
 
 \vskip 1.5\baselineskip
 
 \begin{minipage}[t]{.5\textwidth}
-  \small
-  \noindent
+  \small\noindent%
   Holger Crafoords Ekonomicentrum 1\\
   Tycho Brahes väg 1\\
   Box 743, 2207 Lund, Sweden
   \vspace{1ex}\\
   \href{mailto:johan.larsson@stat.lu.se}{\nolinkurl{johan.larsson@stat.lu.se}}\\
   +46 730353836
-
 \end{minipage}%
 \begin{minipage}[t]{0.5\textwidth}
-  \raggedleft\small
+  \raggedleft\small%
   \href{https://larssonjohan.com}{\nolinkurl{larssonjohan.com}}\\
   {\aiOrcid}\,
   \href{https://orcid.org/0000-0002-4029-5945}{\nolinkurl{orcid.org/0000-0002-4029-5945}}\\
@@ -153,8 +140,7 @@
 
 %\tableofcontents
 
-\hypertarget{education}{%
-  \section{Education}\label{education}}
+\section{Education}
 
 % \hypertarget{degrees}{%
 % \subsection{Degrees}\label{degrees}}
@@ -282,8 +268,7 @@
 % }
 % \end{description}
 
-\hypertarget{research}{%
-  \section{Research}\label{research}}
+\section{Research}
 
 \begin{description}
   \item[2015 -- 2018] {
@@ -319,22 +304,23 @@
         }
 \end{description}
 
-\hypertarget{publications}{%
-  \section{Publications}\label{publications}}
+\section{Publications}
 
 \nocite{*}
 
 \printbibliography[title=Published
   Articles,heading=subbibnumbered,keyword=published-article]
+
 \printbibliography[title=Unpublished
   Articles,heading=subbibnumbered,keyword=unpublished-article]
+
 \printbibliography[title=Theses,heading=subbibnumbered,keyword=thesis]
 %\printbibliography[title=Conference Papers,heading=subbibnumbered,keyword=conference-paper]
+
 \printbibliography[title=Conference
   Abstracts,heading=subbibnumbered,keyword=conference-abstract]
 
-\hypertarget{talks}{%
-  \section{Talks}\label{talks}}
+\section{Talks}
 
 \begin{description}[
     labelwidth = \widthof{2018, June 18} + 1em,
@@ -355,8 +341,7 @@
         }
 \end{description}
 
-\hypertarget{teaching}{%
-  \section{Teaching}\label{teaching}}
+\section{Teaching}
 
 \subsection{Instructor}
 
@@ -409,8 +394,7 @@
         }
 \end{description}
 
-\hypertarget{supervision}{%
-  \section{Supervision and Mentorship}\label{supervision}}
+\section{Supervision and Mentorship}
 
 \begin{description}
   \item[2019 -- 2021]{
@@ -443,8 +427,7 @@
         }
 \end{description}
 
-\hypertarget{reviewer}{%
-  \section{Referee Service}\label{reviewer}}
+\section{Referee Service}
 
 \begin{itemize}
   \item Gait \& Posture (ISSN: 0966-6362)
@@ -456,6 +439,7 @@ See \href{http://publons.com/a/1299032}{publons.com/a/1299032} for
 additional information.
 
 \section{Comittee Service}
+
 \begin{description}[
     labelwidth = \widthof{2020} + 1em,
     leftmargin = \widthof{2020} + 1em,
@@ -468,8 +452,7 @@ additional information.
         }
 \end{description}
 
-\hypertarget{software}{%
-  \section{Software}\label{software}}
+\section{Software}
 
 \begin{description}[
     labelwidth = \widthof{qualpalr} + 1em,
@@ -499,4 +482,5 @@ additional information.
         }
 
 \end{description}
+
 \end{document}
