@@ -128,14 +128,16 @@
 \end{minipage}%
 \begin{minipage}[t]{0.5\textwidth}
   \raggedleft\small%
-  \href{https://larssonjohan.com}{\nolinkurl{larssonjohan.com}}\\
+  {\faHome}\, \href{https://larssonjohan.com}{\nolinkurl{larssonjohan.com}}\\
+  % {\aiPublons}\,
+  % \href{https://publons.com/a/1299032}{\nolinkurl{publons.com/a/1299032}}\\
+  {\faGithub}\, \href{https://github.com/jolars}{\nolinkurl{github.com/jolars}} \\
   {\aiOrcid}\,
-  \href{https://orcid.org/0000-0002-4029-5945}{\nolinkurl{orcid.org/0000-0002-4029-5945}}\\
-  {\aiResearchGate}\,
-  \href{https://www.researchgate.net/profile/Johan_Larsson7}{\nolinkurl{researchgate.net/profile/Johan\_Larsson7}}\\
-  {\aiPublons}\,
-  \href{https://publons.com/a/1299032}{\nolinkurl{publons.com/a/1299032}}\\
-  {\faGithub}\, \href{https://github.com/jolars}{\nolinkurl{github.com/jolars}}
+  \href{https://orcid.org/0000-0002-4029-5945}{ORCID Profile}\\
+  % {\aiResearchGate}\,
+  % \href{https://www.researchgate.net/profile/Johan_Larsson7}{Research Gate}\\
+  {\aiGoogleScholar}\,
+  \href{https://scholar.google.com/citations?user=DCJvywYAAAAJ}{Google Scholar Profile}\\
 \end{minipage}
 
 %\tableofcontents
@@ -161,23 +163,23 @@
     Title: \emph{eulerr: Area-proportional euler diagrams with ellipses}
     }
 
-  \item[2015 -- 2017] {
-    \textbf{Master's Degree in Medical Science}, \emph{Lund University}
+  % \item[2015 -- 2017] {
+  %   \textbf{Master's Degree in Medical Science}, \emph{Lund University}
 
-    Supervisor: \emph{Eva-Maj Malmström}
+  %   Supervisor: \emph{Eva-Maj Malmström}
 
-    Title: \emph{Gym-based exercise therapy for patients with persistent
-      neck pain: A research protocol for a randomized controlled trial}
-    }
+  %   Title: \emph{Gym-based exercise therapy for patients with persistent
+  %     neck pain: A research protocol for a randomized controlled trial}
+  %   }
 
-  \item[2011 -- 2014] {
-    \textbf{Bachelor's Degree in Physical Therapy}, \emph{Lund University}
+  % \item[2011 -- 2014] {
+  %   \textbf{Bachelor's Degree in Physical Therapy}, \emph{Lund University}
 
-    Supervisor: \emph{Amanda Lundvik Gyllensten}
+  %   Supervisor: \emph{Amanda Lundvik Gyllensten}
 
-    Title: \emph{The professional role and technology use among physical
-      therapists in Tokyo: A qualitative interview study}
-    }
+  %   Title: \emph{The professional role and technology use among physical
+  %     therapists in Tokyo: A qualitative interview study}
+  %   }
 \end{description}
 
 % \hypertarget{courses}{%
@@ -268,41 +270,28 @@
 % }
 % \end{description}
 
-\section{Research}
+% \section{Research}
 
-\begin{description}
-  \item[2015 -- 2018] {
-    \textbf{Research Assistant}, \emph{SensoriMotor Integration Lund
-      (SMIL): collaborative effort between Lund University, Skåne
-      University
-      Hospital, Malmö University, and Umeå University}
-    }
-  \item[2015] {
-    \textbf{Research Assistant}, \emph{The Department of Pain
-      Rehabilitation, Skåne University Hospital}
+% \begin{description}
+%   \item[2015 -- 2018] {
+%     \textbf{Research Assistant}, \emph{SensoriMotor Integration Lund
+%       (SMIL): collaborative effort between Lund University, Skåne
+%       University
+%       Hospital, Malmö University, and Umeå University}
+%     }
+%   \item[2015] {
+%     \textbf{Research Assistant}, \emph{The Department of Pain
+%       Rehabilitation, Skåne University Hospital}
 
-    % Together with supervisors Eva-Maj Malmström and Hans Westergren I studied patients with longstanding whiplash-associated disorders, which resulted in one publication and two poster presentations.
-    }
-  \item[2014] {
-    \textbf{Research Assistant}, \emph{Department of Clinical Sciences,
-      Lund University}
+%     % Together with supervisors Eva-Maj Malmström and Hans Westergren I studied patients with longstanding whiplash-associated disorders, which resulted in one publication and two poster presentations.
+%     }
+%   \item[2014] {
+%     \textbf{Research Assistant}, \emph{Department of Clinical Sciences,
+%       Lund University}
 
-    % As part of a research stipend from the Faculty of Medicine at Lund University, I -- under supervision of Eva-Ekvall Hansson and Michael Miller -- studied the gait of dizzy, elderly patients. This work resulted in two publications.
-    }
-\end{description}
-
-\section{Scholarships}
-\begin{description}
-  \item[2018] {
-    \textbf{Google Summer of Code}, \emph{The R Project for Statistical
-      Computing}
-
-    Project:
-
-    \emph{\href{https://summerofcode.withgoogle.com/archive/2018/projects/6276491595743232/}{Fast
-        Sparse Linear Models for Big Data with SAGA}}
-    }
-\end{description}
+%     % As part of a research stipend from the Faculty of Medicine at Lund University, I -- under supervision of Eva-Ekvall Hansson and Michael Miller -- studied the gait of dizzy, elderly patients. This work resulted in two publications.
+%     }
+% \end{description}
 
 \section{Publications}
 
@@ -315,7 +304,6 @@
   Articles,heading=subbibnumbered,keyword=unpublished-article]
 
 \printbibliography[title=Theses,heading=subbibnumbered,keyword=thesis]
-%\printbibliography[title=Conference Papers,heading=subbibnumbered,keyword=conference-paper]
 
 \printbibliography[title=Conference
   Abstracts,heading=subbibnumbered,keyword=conference-abstract]
@@ -396,7 +384,11 @@
 
 \subsection{Course Development}
 
-\begin{description}
+\begin{description}[
+    labelwidth = \widthof{2020} + 1em,
+    leftmargin = \widthof{2020} + 1em,
+  ]
+
   \item[2020]{
               \textbf{Data Visualization}, \emph{Department of Statistics, Lund
                 University}
@@ -406,76 +398,64 @@
         }
 \end{description}
 
-\section{Contracted Work}
-
-\begin{description}
-  \item[2021]{
-              \textbf{WHO Antimicrobial Resistance Dashboard}
-
-              Contracted work to develop and deploy a visualization dashboard for
-              WHO's Antimicrobial Resistance team in Europe.
-        }
-\end{description}
-
 \section{Supervision and Mentorship}
 
 \begin{description}
   \item[2022] {
     \textbf{Main Supervisor, Master's Thesis}, \emph{Data Analysis and
-    Business Analytics, The Department of Statistics, Lund University}
+      Business Analytics, The Department of Statistics, Lund University}
 
     % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
     }
-  \item[2019 -- 2021]{
-              \textbf{Google Summer of School}
+    \item[2019 -- 2021]{
+                \textbf{Google Summer of School}
 
-              Students:
-              \emph{
-                \href{
-                  https://summerofcode.withgoogle.com/archive/2019/projects/4654960430546944/
-                }{
-                  QinchengLiu (2019)
-                },
-                \href{
-                  https://summerofcode.withgoogle.com/dashboard/project/5459519376719872/overview
-                }{
-                  AkarshGoyal (2020)
-                }
-              } }
-  \item[2017 -- 2019] {
-    \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
-      Orofacial Pain and Jaw Function, Malmö University}
+                Students:
+                \emph{
+                  \href{
+                    https://summerofcode.withgoogle.com/archive/2019/projects/4654960430546944/
+                  }{
+                    Qincheng Liu (2019)
+                  },
+                  \href{
+                    https://summerofcode.withgoogle.com/dashboard/project/5459519376719872/overview
+                  }{
+                    Akarsh Goyal (2020)
+                  }
+                } }
+  % \item[2017 -- 2019] {
+  %   \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
+  %     Orofacial Pain and Jaw Function, Malmö University}
 
-    % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
-    }
-  \item[2017 -- 2018] {
-    \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
-      Orofacial Pain and Jaw Function, Malmö University}
+  %   % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
+  %   }
+  % \item[2017 -- 2018] {
+  %   \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
+  %     Orofacial Pain and Jaw Function, Malmö University}
 
-    % Supervision of two students at master's level for a project about biofeedback and posture.
-    }
+  %   % Supervision of two students at master's level for a project about biofeedback and posture.
+  %   }
 \end{description}
 
 \section{Referee Service}
 
 \begin{itemize}
-  \item International Conference for Machine Learning (ICML), ISSN: 2640-3498
-        % \item Gait \& Posture (ISSN: 0966-6362)
-        % \item Journal of Clinical Interventions in Aging (ISSN: 1178-1998)
-        % \item Spine (ISSN: 0362-2436)
-  \item Archives of Physical Medicine and Rehabilitation (ISSN: 0003-9993)
+  \item Advanced in Neural Information Processing (NeurIPS), 2021, 2022. ISSN: 1049-5258
+  \item International Conference for Machine Learning (ICML), 2022. ISSN: 2640-3498
 \end{itemize}
-See \href{http://publons.com/a/1299032}{publons.com/a/1299032} for
-additional information.
+
+% See \href{http://publons.com/a/1299032}{publons.com/a/1299032} for
+% additional information.
 
 \section{Comittee Service}
 
 \begin{description}[
-    labelwidth = \widthof{2020} + 1em,
-    leftmargin = \widthof{2020} + 1em,
+    labelwidth = \widthof{2020 -- now} + 1em,
+    leftmargin = \widthof{2020 -- now} + 1em,
   ]
-  \item[2020]{
-              \textbf{Statistical Learning Seminar Series},
+  \item[2020 -- now]{
+              \textbf{Statistical Learning Seminar Series}
+
               \url{https://statistical-learning-seminars.github.io/}
 
               Member of organizational committee
@@ -489,28 +469,65 @@ additional information.
     leftmargin = \widthof{qualpalr} + 1em,
   ]
   \item[SLOPE] {
-    Generalized Linear Models Penalized with SLOPE
+    Generalized linear models with the sorted L1 norm
 
     \url{https://CRAN.R-project.org/package=SLOPE}
     }
-  % \item[sgdnet] {
-  %   Elastic Net-regularized Generalized Linear Models via the efficient
-  %   SAGA algorithm
+    % \item[sgdnet] {
+    %   Elastic Net-regularized Generalized Linear Models via the efficient
+    %   SAGA algorithm
 
-  %   \url{https://github.com/jolars/sgdnet}
-  %   }
-  \item[eulerr] {
-    Area-Proportional Euler diagrams with ellipses
+    %   \url{https://github.com/jolars/sgdnet}
+    %   }
+
+  \item[benchopt]{
+    Reproducible, efficient and collaborative optimization benchmarks
+
+    \url{https://benchopt.github.io/}
+  }
+
+  \item[eulerr]{
+    Area-proportional Euler diagrams with ellipses
 
     \url{https://CRAN.R-project.org/package=eulerr}
-    }
+  }
+
   \item[qualpalr] {
-    Automatic generation of qualitative color palettes using color
-    difference algorithms
+    Automatic generation of qualitative color palettes using color difference
+    algorithms
 
     \url{https://CRAN.R-project.org/package=tactile}
-    }
+  }
 
 \end{description}
 
+\section{Scholarships}
+\begin{description}[
+    labelwidth = \widthof{2018} + 1em,
+    leftmargin = \widthof{2018} + 1em,
+  ]
+
+  \item[2018]{
+    \textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
+
+    Project: \emph{\href{https://summerofcode.withgoogle.com/archive/2018/projects/6276491595743232/}{Fast Sparse Linear Models for Big Data with SAGA}}
+  }
+\end{description}
+
+\section{Contracted Work}
+
+\begin{description}[
+    labelwidth = \widthof{2021} + 1em,
+    leftmargin = \widthof{2021} + 1em,
+  ]
+
+  \item[2021]{
+    \textbf{WHO Antimicrobial Resistance Dashboard}
+
+    Contracted work to develop and deploy a visualization dashboard for
+    WHO's Antimicrobial Resistance team in Europe.
+  }
+\end{description}
+
 \end{document}
+
