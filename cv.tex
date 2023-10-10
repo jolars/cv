@@ -4,7 +4,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode,pdfusetitle}{hyperref}
 \PassOptionsToPackage{hyphens}{xurl}
-\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
   10pt,
@@ -47,7 +47,7 @@
   defernumbers = true,
   maxbibnames  = 99
 ]{biblatex}
-\addbibresource{assets/publications.bib}
+\addbibresource{publications.bib}
 
 \usepackage{xurl}
 
@@ -76,8 +76,6 @@
   urlcolor   = NavyBlue,
   breaklinks = true
 }
-
-\usepackage{tikz}
 
 \usepackage{academicons}
 \usepackage{fontawesome}
@@ -153,7 +151,7 @@
     \textbf{PhD in Statistics}, \emph{Department of Statistics, Lund
       University}
 
-      Supervisors: \emph{Jonas Wallin (main), Małgorzata Bogdan (co-supervisor)}
+    Supervisors: \emph{Jonas Wallin (main), Małgorzata Bogdan (co-supervisor)}
     }
 
   \item[2018] {
@@ -164,23 +162,23 @@
     Title: \emph{eulerr: Area-proportional euler diagrams with ellipses}
     }
 
-  % \item[2015 -- 2017] {
-  %   \textbf{Master's Degree in Medical Science}, \emph{Lund University}
+    % \item[2015 -- 2017] {
+    %   \textbf{Master's Degree in Medical Science}, \emph{Lund University}
 
-  %   Supervisor: \emph{Eva-Maj Malmström}
+    %   Supervisor: \emph{Eva-Maj Malmström}
 
-  %   Title: \emph{Gym-based exercise therapy for patients with persistent
-  %     neck pain: A research protocol for a randomized controlled trial}
-  %   }
+    %   Title: \emph{Gym-based exercise therapy for patients with persistent
+    %     neck pain: A research protocol for a randomized controlled trial}
+    %   }
 
-  % \item[2011 -- 2014] {
-  %   \textbf{Bachelor's Degree in Physical Therapy}, \emph{Lund University}
+    % \item[2011 -- 2014] {
+    %   \textbf{Bachelor's Degree in Physical Therapy}, \emph{Lund University}
 
-  %   Supervisor: \emph{Amanda Lundvik Gyllensten}
+    %   Supervisor: \emph{Amanda Lundvik Gyllensten}
 
-  %   Title: \emph{The professional role and technology use among physical
-  %     therapists in Tokyo: A qualitative interview study}
-  %   }
+    %   Title: \emph{The professional role and technology use among physical
+    %     therapists in Tokyo: A qualitative interview study}
+    %   }
 \end{description}
 
 % \hypertarget{courses}{%
@@ -376,21 +374,12 @@
 
               % A graduate level course in deep learning that I served as a teaching assistant for.
         }
-  % \item[2016 -- 2018]{
-  %     \textbf{Teaching Assistant}, \emph{Department of Physiotherapy, Lund University}
-
-  %     % I served as a teaching assistant for students at the program of medicine.
-  % }
 \end{description}
 
 \subsection{Course Development}
 
-\begin{description}[
-    labelwidth = \widthof{2020} + 1em,
-    leftmargin = \widthof{2020} + 1em,
-  ]
-
-  \item[2020]{
+\begin{description}
+  \item[2020--2023]{
               \textbf{Data Visualization}, \emph{Department of Statistics, Lund
                 University}
 
@@ -409,7 +398,7 @@
     % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
     }
     \item[2019 -- 2021]{
-                \textbf{Google Summer of School}
+                \textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
 
                 Students:
                 \emph{
@@ -424,18 +413,18 @@
                     Akarsh Goyal (2020)
                   }
                 } }
-  % \item[2017 -- 2019] {
-  %   \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
-  %     Orofacial Pain and Jaw Function, Malmö University}
+    % \item[2017 -- 2019] {
+    %   \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
+    %     Orofacial Pain and Jaw Function, Malmö University}
 
-  %   % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
-  %   }
-  % \item[2017 -- 2018] {
-  %   \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
-  %     Orofacial Pain and Jaw Function, Malmö University}
+    %   % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
+    %   }
+    % \item[2017 -- 2018] {
+    %   \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
+    %     Orofacial Pain and Jaw Function, Malmö University}
 
-  %   % Supervision of two students at master's level for a project about biofeedback and posture.
-  %   }
+    %   % Supervision of two students at master's level for a project about biofeedback and posture.
+    %   }
 \end{description}
 
 \section{Referee Service}
@@ -450,16 +439,13 @@
 
 \section{Comittee Service}
 
-\begin{description}[
-    labelwidth = \widthof{2020 -- now} + 1em,
-    leftmargin = \widthof{2020 -- now} + 1em,
-  ]
-  \item[2020 -- now]{
+\begin{description}
+  \item[2020 -- 2022]{
               \textbf{Statistical Learning Seminar Series}
 
               \url{https://statistical-learning-seminars.github.io/}
 
-              Member of organizational committee
+              Main organizer
         }
 \end{description}
 
@@ -474,31 +460,25 @@
 
     \url{https://CRAN.R-project.org/package=SLOPE}
     }
-    % \item[sgdnet] {
-    %   Elastic Net-regularized Generalized Linear Models via the efficient
-    %   SAGA algorithm
 
-    %   \url{https://github.com/jolars/sgdnet}
-    %   }
+    \item[benchopt]{
+                Reproducible, efficient and collaborative optimization benchmarks
 
-  \item[benchopt]{
-    Reproducible, efficient and collaborative optimization benchmarks
+                \url{https://benchopt.github.io/}
+          }
 
-    \url{https://benchopt.github.io/}
-  }
+    \item[eulerr]{
+                Area-proportional Euler diagrams with ellipses
 
-  \item[eulerr]{
-    Area-proportional Euler diagrams with ellipses
-
-    \url{https://CRAN.R-project.org/package=eulerr}
-  }
+                \url{https://CRAN.R-project.org/package=eulerr}
+          }
 
   \item[qualpalr] {
     Automatic generation of qualitative color palettes using color difference
     algorithms
 
     \url{https://CRAN.R-project.org/package=tactile}
-  }
+    }
 
 \end{description}
 
@@ -509,10 +489,10 @@
   ]
 
   \item[2018]{
-    \textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
+              \textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
 
-    Project: \emph{\href{https://summerofcode.withgoogle.com/archive/2018/projects/6276491595743232/}{Fast Sparse Linear Models for Big Data with SAGA}}
-  }
+              Project: \emph{\href{https://summerofcode.withgoogle.com/archive/2018/projects/6276491595743232/}{Fast Sparse Linear Models for Big Data with SAGA}}
+        }
 \end{description}
 
 \section{Contracted Work}
@@ -523,11 +503,11 @@
   ]
 
   \item[2021]{
-    \textbf{WHO Antimicrobial Resistance Dashboard}
+              \textbf{WHO Antimicrobial Resistance Dashboard}
 
-    Contracted work to develop and deploy a visualization dashboard for
-    WHO's Antimicrobial Resistance team in Europe.
-  }
+              Contracted work to develop and deploy a visualization dashboard for
+              WHO's Antimicrobial Resistance team in Europe.
+        }
 \end{description}
 
 \end{document}
