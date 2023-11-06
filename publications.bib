@@ -68,20 +68,23 @@
   keywords      = {software}
 }
 
-@inproceedings{larsson2020c,
+@inproceedings{larsson2020b,
   title         = {The Strong Screening Rule for {{SLOPE}}},
-  author        = {Larsson, Johan and Bogdan, Malgorzata and Wallin, Jonas},
+  author        = {Larsson, Johan and Bogdan, Ma\l{}gorzata and Wallin, Jonas},
   booktitle     = {Advances in {{Neural Information Processing Systems}} 33},
   location      = {{Virtual}},
   publisher     = {{Curran Associates, Inc.}},
   volume        = {33},
   pages         = {14592--14603},
+  isbn          = {978-1-71382-954-6},
   url           = {
-    https://papers.nips.cc/paper\_files
-    /paper/2020/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html
+    https://papers.nips.cc/paper\_files/paper/2020/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html
   },
-  editor        = {Larochelle, H. and Ranzato, M. and Hadsell, R. and Balcan, M. F. and Lin, H.},
   author+an     = {1=highlight},
+  editor        = {
+    Larochelle, Hugo and Ranzato, Marc'Aurelio and Hadsell, Raia and Balcan,
+    Maria-Florina and Lin, Hsuan-Tien
+  },
   date          = {2020-12-06/0012},
   abstract      = {
     Extracting relevant features from data sets where the number of observations n is
@@ -91,21 +94,26 @@
     SLOPE, however, lack the efficiency that respective tools for the lasso enjoy,
     particularly in the context of estimating a complete regularization path. A key
     component in the efficiency of the lasso is predictor screening rules: rules that
-    allow predictors to be discarded before estimating the model. This is the first
+    allow  predictors to be discarded before estimating the model. This is the first
     paper to establish such a rule for SLOPE. We develop a screening rule for SLOPE by
     examining its subdifferential and show that this rule is a generalization of the
     strong rule for the lasso. Our rule is heuristic, which means that it may discard
     predictors erroneously. In our paper, however, we show that such situations are
     rare and easily safeguarded against by a simple check of the optimality conditions.
     Our numerical experiments show that the rule performs well in practice, leading to
-    improvements by orders of magnitude for data in the p {$>>$} n domain, as well as
-    incurring no additional computational overhead when n {\$>\$} p.
+    improvements by orders of magnitude for data in the \textbackslash (p
+    \textbackslash gg n\textbackslash ) domain, as well as incurring no additional
+    computational overhead when \$n {$>\$} p\$.
   },
-  eventtitle    = {Neural {{Information Procession Systems}} 2020},
+  eventtitle    = {
+    34th {{Conference}} on {{Neural Information Processing Systems}} ({{NeurIPS}} 2020)
+  },
   langid        = {english},
   keywords      = {published-article}
 }
 
+% == BibLateX quality report for larsson2020b:
+% ? Unsure about the formatting of the booktitle
 @inproceedings{larsson2021b,
   title         = {Look-Ahead Screening Rules for the Lasso},
   author        = {Larsson, Johan},

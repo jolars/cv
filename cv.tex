@@ -1,43 +1,40 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 
-% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode,pdfusetitle}{hyperref}
 \PassOptionsToPackage{hyphens}{xurl}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
-%
-\documentclass[
-  10pt,
-  headsepline=true,
-  english,
-  DIV=12
-]{scrartcl}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
 
+\documentclass[english,a4paper]{article}
+
+\usepackage{geometry}
+\usepackage{babel}
+
+% Font settings
 \usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage{libertinus}
+\usepackage{inconsolata}
+\setmonofont[Scale=MatchLowercase]{inconsolata}
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
 
-\usepackage{upquote} %straight quotes in verbatim environments
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\usepackage{textcomp}
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath}
 
 \usepackage{xcolor}
 \usepackage{bookmark}
-\usepackage{csquotes}
 
 \setlength\parindent{0in}
 
 % tables and lists
 \usepackage{enumitem}
-\usepackage{longtable}
 \usepackage{booktabs}
 
 \usepackage{graphicx}
 
-% Capheight
-\newlength{\capheight}
-% Create the reference text for measures
-\settoheight{\capheight}{B}
+\usepackage{xurl}
 
 % bibliography
 \usepackage[
@@ -49,8 +46,6 @@
 ]{biblatex}
 \addbibresource{publications.bib}
 
-\usepackage{xurl}
-
 % Make my name bold in references
 \renewcommand*{%
   \mkbibnamegiven
@@ -59,11 +54,19 @@
   \mkbibnamefamily
 }[1]{\ifitemannotation{highlight}{\textbf{#1}}{#1}}
 
-% HEADERS AND FOOTERS
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
-\lohead[]{CV}
-\rohead[]{Johan Larsson}
+% % HEADERS AND FOOTERS
+% \usepackage{scrlayer-scrpage}
+% \pagestyle{scrheadings}
+% \lohead[]{CV}
+% \rohead[]{Johan Larsson}
+%
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyhead[L]{Johan Larsson}
+\fancyhead[R]{CV}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
 
 % HYPERREF
 \usepackage{hyperref}
@@ -71,9 +74,9 @@
   pdftitle   = {CV},
   pdfauthor  = {Johan Larsson},
   colorlinks = true,
-  linkcolor  = NavyBlue,
-  citecolor  = NavyBlue,
-  urlcolor   = NavyBlue,
+  linkcolor  = MidnightBlue,
+  citecolor  = MidnightBlue,
+  urlcolor   = MidnightBlue,
   breaklinks = true
 }
 
@@ -104,47 +107,45 @@
 \begin{titlepage}
 \end{titlepage}
 
-\begin{center}
-  {\large \textcolor{darkgray}{CV}}
-  \medskip
+{\large\textcolor{darkgray}{CV}} \smallskip
 
-  \noindent {\huge \sffamily \bfseries Johan Larsson}
-  \smallskip
+\noindent {\huge \bfseries Johan Larsson}
+\smallskip
 
-  \noindent {\large \today}
-\end{center}
+\noindent {\large \today}
 
-\vskip 1.5\baselineskip
+\vskip 1\baselineskip
 
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{0.5\textwidth}
   \small\noindent%
-  Holger Crafoords Ekonomicentrum 1\\
-  Tycho Brahes väg 1\\
-  Box 743, 2207 Lund, Sweden
-  \vspace{1ex}\\
-  \href{mailto:johan.larsson@stat.lu.se}{\nolinkurl{johan.larsson@stat.lu.se}}\\
-  +46 730353836
+  Lund, Sweden
+
+  \href{mailto:johanlarsson@outlook.com}{\nolinkurl{johanlarsson@outlook.com}}
+
+  \href{tel:+46730353836}{+46 730353836}
 \end{minipage}%
 \begin{minipage}[t]{0.5\textwidth}
-  \raggedleft\small%
-  {\faHome}\, \href{https://larssonjohan.com}{\nolinkurl{larssonjohan.com}}\\
+  \raggedleft\small
+  {\faHome}\, \href{https://larssonjohan.com}{\nolinkurl{larssonjohan.com}}
+
   % {\aiPublons}\,
-  % \href{https://publons.com/a/1299032}{\nolinkurl{publons.com/a/1299032}}\\
-  {\faGithub}\, \href{https://github.com/jolars}{\nolinkurl{github.com/jolars}} \\
-  {\aiOrcid}\,
-  \href{https://orcid.org/0000-0002-4029-5945}{ORCID Profile}\\
+  % \href{https://publons.com/a/1299032}{\nolinkurl{publons.com/a/1299032}}
+
+  {\faGithub}\, \href{https://github.com/jolars}{\nolinkurl{github.com/jolars}}
+
+  % {\aiOrcid}\,
+  % \href{https://orcid.org/0000-0002-4029-5945}{ORCID Profile}
+
   % {\aiResearchGate}\,
-  % \href{https://www.researchgate.net/profile/Johan_Larsson7}{Research Gate}\\
+  % \href{https://www.researchgate.net/profile/Johan_Larsson7}{Research Gate}
+
   {\aiGoogleScholar}\,
-  \href{https://scholar.google.com/citations?user=DCJvywYAAAAJ}{Google Scholar Profile}\\
+  \href{https://scholar.google.com/citations?user=DCJvywYAAAAJ}{Google Scholar Profile}
 \end{minipage}
 
 %\tableofcontents
 
 \section{Education}
-
-% \hypertarget{degrees}{%
-% \subsection{Degrees}\label{degrees}}
 
 \begin{description}
   \item[2018 -- now] {
@@ -152,6 +153,9 @@
       University}
 
     Supervisors: \emph{Jonas Wallin (main), Małgorzata Bogdan (co-supervisor)}
+
+    Note: \emph{Parental leave Jan--Aug 2023}
+
     }
 
   \item[2018] {
@@ -159,7 +163,7 @@
 
     Supervisor: \emph{Peter Gustafsson}
 
-    Title: \emph{eulerr: Area-proportional euler diagrams with ellipses}
+    Title: \emph{eulerr: Area-Proportional Euler Diagrams with Ellipses}
     }
 
     % \item[2015 -- 2017] {
@@ -313,21 +317,11 @@
     labelwidth = \widthof{2018, June 18} + 1em,
     leftmargin = \widthof{2018, June 18} + 1em,
   ]
-  \item[2021, Oct 27] {\textbf{Designing a Distance-Based Course in Data
-      Visualizations: Lessons Learned}, \emph{Cramér Society Fall Meeting}}
-  \item[2021, Sep 21] {\textbf{The Hessian Screening Rule and Adaptive Lasso
-      Paths}, \emph{Statistics Seminar at the Department of Mathematical
-      Statistics, Chalmers/Gothenburg University}}
-  \item[2021, Sep 9] {\textbf{Look-Ahead Screening Rules for the Lasso},
-    \emph{European Young Statisticians Meeting (EYSM) 2021}}
-  \item[2020, May 8] {
-    \textbf{The Strong Screening Rule for SLOPE}, \emph{Statistical
-      Learning Seminar}
-    }
-  \item[2018, June 18] {
-    \textbf{A Case Study in Fitting Area-Proportional Euler Diagrams with
-      Ellipses Using eulerr}, \emph{SetVR 2018}
-    }
+  \item[2021, Oct 27] {\textbf{Designing a Distance-Based Course in Data Visualizations: Lessons Learned}, \emph{Cramér Society Fall Meeting}}
+  \item[2021, Sep 21] {\textbf{The Hessian Screening Rule and Adaptive Lasso Paths}, \emph{Statistics Seminar at the Department of Mathematical Statistics, Chalmers/Gothenburg University}}
+  \item[2021, Sep 9] {\textbf{Look-Ahead Screening Rules for the Lasso}, \emph{European Young Statisticians Meeting (EYSM) 2021}}
+  \item[2020, May 8] {\textbf{The Strong Screening Rule for SLOPE}, \emph{Statistical Learning Seminar}}
+  \item[2018, June 18] {\textbf{A Case Study in Fitting Area-Proportional Euler Diagrams with Ellipses Using eulerr}, \emph{SetVR 2018}}
 \end{description}
 
 \section{Teaching}
@@ -335,45 +329,17 @@
 \subsection{Instructor}
 
 \begin{description}
-  \item[2020--2022]{
-              \textbf{Data Visualization}, \emph{Department of Statistics, Lund
-                University}
-        }
-  \item[2019--2021]{
-              \textbf{Statistics: Basic Course}, \emph{Department of Statistics, Lund
-                University}
-
-              % An undergraduate level course in basic statistics that I served as a teaching assistant and lecturer for.
-        }
+  \item[2020 -- 2023]{\textbf{Data Visualization}, \emph{Department of Statistics, Lund University}}
+  \item[2019 -- 2021]{\textbf{Statistics: Basic Course}, \emph{Department of Statistics, Lund University}}
 \end{description}
 
 \subsection{Teaching Assistant}
 
 \begin{description}
-
-  \item[2021]{
-              \textbf{Introduction to R Programming}, \emph{Department of Statistics,
-                Lund University}
-        }
-
-  \item[2019--2020]{
-              \textbf{Data Mining and Visualization}, \emph{Department of Statistics,
-                Lund University}
-
-              % A graduate level course in statistical learning that I served as a teaching assistant for. I redesigned the lab activities.
-        }
-
-  \item[2019--2021]{
-              \textbf{Statistics for Fire Engineers},
-              \emph{Department of Statistics, Lund University}
-        }
-
-  \item[2019]{
-              \textbf{Artificial Intelligence and Deep Learning Methods},
-              \emph{Department of Statistics, Lund University}
-
-              % A graduate level course in deep learning that I served as a teaching assistant for.
-        }
+  \item[2021]{\textbf{Introduction to R Programming}, \emph{Department of Statistics, Lund University}}
+  \item[2019 -- 2020]{\textbf{Data Mining and Visualization}, \emph{Department of Statistics, Lund University}}
+  \item[2019 -- 2021]{\textbf{Statistics for Fire Engineers}, \emph{Department of Statistics, Lund University}}
+  \item[2019]{\textbf{Artificial Intelligence and Deep Learning Methods}, \emph{Department of Statistics, Lund University}}
 \end{description}
 
 \subsection{Course Development}
@@ -391,51 +357,39 @@
 \section{Supervision and Mentorship}
 
 \begin{description}
-  \item[2022] {
-    \textbf{Main Supervisor, Master's Thesis}, \emph{Data Analysis and
-      Business Analytics, The Department of Statistics, Lund University}
+  \item[2023] {
+    \textbf{Bachelor's Thesis}, \emph{The Department of Statistics, Lund University}
 
-    % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
+    Title: TBA
+
+    Students: Elias Gullberg
     }
-    \item[2019 -- 2021]{
-                \textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
+  \item[2023] {
+    \textbf{Bachelor's Thesis}, \emph{The Department of Statistics, Lund University}
 
-                Students:
-                \emph{
-                  \href{
-                    https://summerofcode.withgoogle.com/archive/2019/projects/4654960430546944/
-                  }{
-                    Qincheng Liu (2019)
-                  },
-                  \href{
-                    https://summerofcode.withgoogle.com/dashboard/project/5459519376719872/overview
-                  }{
-                    Akarsh Goyal (2020)
-                  }
-                } }
-    % \item[2017 -- 2019] {
-    %   \textbf{Co-Supervisor, Bachelor's Thesis}, \emph{The Department of
-    %     Orofacial Pain and Jaw Function, Malmö University}
+    Title: TBA
 
-    %   % Supervision of two students at undergraduate level for a project regarding exercise for neck and jaw pain.
-    %   }
-    % \item[2017 -- 2018] {
-    %   \textbf{Co-Supervisor, Master's Thesis}, \emph{The Department of
-    %     Orofacial Pain and Jaw Function, Malmö University}
+    Students: Marcus Stolz, Jonathan Christopher
+    }
+  \item[2022] {
+    \textbf{Master's Thesis}, \emph{Data Analysis and Business Analytics, Lund University}
 
-    %   % Supervision of two students at master's level for a project about biofeedback and posture.
-    %   }
+    Title: Interactive Network Visualization of Insurance Portfolios
+
+    Students: Gustavo Lemos Borba, Stella Sofia Sologaistoa Betancourt
+    }
+    \item[2019 -- 2021]{\textbf{Google Summer of Code}, \emph{The R Project for Statistical Computing}
+
+                Students: \emph{\href{https://summerofcode.withgoogle.com/archive/2019/projects/4654960430546944}{Qincheng Liu (2019)}, \href{https://summerofcode.withgoogle.com/archive/2020/projects/5476086193848320}{Akarsh Goyal (2020)}}
+          }
 \end{description}
 
 \section{Referee Service}
 
-\begin{itemize}
-  \item Advanced in Neural Information Processing (NeurIPS), 2021, 2022. ISSN: 1049-5258
-  \item International Conference for Machine Learning (ICML), 2022. ISSN: 2640-3498
-\end{itemize}
-
-% See \href{http://publons.com/a/1299032}{publons.com/a/1299032} for
-% additional information.
+\begin{description}
+  \item[2021, 2022]{Advances in Neural Information Processing (NeurIPS)}
+  \item[2022]{International Conference for Machine Learning (ICML)}
+\end{description}
 
 \section{Comittee Service}
 
