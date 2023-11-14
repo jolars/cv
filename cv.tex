@@ -6,8 +6,9 @@
 \PassOptionsToPackage{usenames,dvipsnames}{xcolor}
 
 \documentclass[english,a4paper]{article}
+\usepackage{multicol}
 
-\usepackage{geometry}
+\usepackage[textwidth=15cm,nomarginpar]{geometry}
 \usepackage{babel}
 
 % Font settings
@@ -20,12 +21,12 @@
 \setdefaultlanguage[variant=american]{english}
 
 \usepackage{textcomp}
-\usepackage{csquotes}
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath}
 
 \usepackage{xcolor}
 \usepackage{bookmark}
+\usepackage{csquotes}
 
 \setlength\parindent{0in}
 
@@ -34,7 +35,6 @@
 \usepackage{booktabs}
 
 \usepackage{graphicx}
-
 
 % bibliography
 \usepackage[
@@ -56,12 +56,7 @@
   \mkbibnamefamily
 }[1]{\ifitemannotation{highlight}{\textbf{#1}}{#1}}
 
-% % HEADERS AND FOOTERS
-% \usepackage{scrlayer-scrpage}
-% \pagestyle{scrheadings}
-% \lohead[]{CV}
-% \rohead[]{Johan Larsson}
-%
+% HEADERS AND FOOTERS
 \usepackage{fancyhdr}
 \fancyhead{}
 \fancyhead[L]{Johan Larsson}
@@ -94,9 +89,9 @@
   font	      = \rmfamily\footnotesize,
   parsep      = 0.3ex,
   align       = parleft,
-  labelwidth  = \widthof{2020 -- 2018} + 1em,
+  labelwidth  = \widthof{2020 -- 2018} + 1ex,
   itemindent  = 0em,
-  leftmargin  = \widthof{2020 -- 2018} + 1em,
+  leftmargin  = \widthof{2020 -- 2018} + 1ex,
   labelindent = 0em,
   labelsep    = 0em
 }
@@ -163,9 +158,9 @@
   \item[2018] {
     \textbf{Bachelor's Degree in Statistics}, \emph{Lund University}
 
-    Supervisor: \emph{Peter Gustafsson}
-
     Title: \emph{eulerr: Area-Proportional Euler Diagrams with Ellipses}
+
+    Supervisor: \emph{Peter Gustafsson}
     }
 
     % \item[2015 -- 2017] {
@@ -298,9 +293,12 @@
 %     }
 % \end{description}
 
-\section{Publications}
-
 \nocite{*}
+
+% \begin{multicols}{2}
+%   [
+\section{Publications}
+% ]
 
 \printbibliography[title=Published
   Articles,heading=subbibnumbered,keyword=published-article]
@@ -313,15 +311,17 @@
 \printbibliography[title=Conference
   Abstracts,heading=subbibnumbered,keyword=conference-abstract]
 
+% \end{multicols}
+
 \section{Talks}
 
 \begin{description}[
-    labelwidth = \widthof{2018, June 18} + 1em,
-    leftmargin = \widthof{2018, June 18} + 1em,
+    labelwidth = \widthof{2018, June 18} + 1ex,
+    leftmargin = \widthof{2018, June 18} + 1ex
   ]
-  \item[2021, Oct 27] {\textbf{Designing a Distance-Based Course in Data Visualizations: Lessons Learned}, \emph{Cramér Society Fall Meeting}}
+  \item[2021, Oct 27] {\textbf{Designing a Distance-Based Course in Data Visualization: Lessons Learned}, \emph{Cramér Society Fall Meeting}}
   \item[2021, Sep 21] {\textbf{The Hessian Screening Rule and Adaptive Lasso Paths}, \emph{Statistics Seminar at the Department of Mathematical Statistics, Chalmers/Gothenburg University}}
-  \item[2021, Sep 9] {\textbf{Look-Ahead Screening Rules for the Lasso}, \emph{European Young Statisticians Meeting (EYSM) 2021}}
+  \item[2021, Sep 9] {\textbf{Look-Ahead Screening Rules for the Lasso}, \emph{EYSM 2021}}
   \item[2020, May 8] {\textbf{The Strong Screening Rule for SLOPE}, \emph{Statistical Learning Seminar}}
   \item[2018, June 18] {\textbf{A Case Study in Fitting Area-Proportional Euler Diagrams with Ellipses Using eulerr}, \emph{SetVR 2018}}
 \end{description}
@@ -364,7 +364,7 @@
 
     Title: TBA
 
-    Students: Elias Gullberg
+    Student: Elias Gullberg
     }
   \item[2023] {
     \textbf{Bachelor's Thesis}, \emph{The Department of Statistics, Lund University}
@@ -397,11 +397,9 @@
 
 \begin{description}
   \item[2020 -- 2022]{
-              \textbf{Statistical Learning Seminar Series}
+              \textbf{Statistical Learning Seminar Series}, Main Organizer
 
               \url{https://statistical-learning-seminars.github.io/}
-
-              Main organizer
         }
 \end{description}
 
@@ -412,29 +410,29 @@
     leftmargin = \widthof{qualpalr} + 1em,
   ]
   \item[SLOPE] {
-    Generalized linear models with the sorted L1 norm
+    \textbf{Generalized linear models penalized with the sorted L1 norm}
 
-    \url{https://CRAN.R-project.org/package=SLOPE}
+    Author and maintainer, \texttt{R}, \url{https://CRAN.R-project.org/package=SLOPE}
     }
 
     \item[benchopt]{
-                Reproducible, efficient and collaborative optimization benchmarks
+                \textbf{Reproducible, efficient and collaborative optimization benchmarks}
 
-                \url{https://benchopt.github.io/}
+                Contributor, \texttt{Python}, \url{https://benchopt.github.io/}
           }
 
     \item[eulerr]{
-                Area-proportional Euler diagrams with ellipses
+                \textbf{Area-proportional Euler diagrams with ellipses}
 
-                \url{https://CRAN.R-project.org/package=eulerr}
+                Author and maintainer, \texttt{R}, \url{https://CRAN.R-project.org/package=eulerr}
           }
 
-  \item[qualpalr] {
-    Automatic generation of qualitative color palettes using color difference
-    algorithms
-
-    \url{https://CRAN.R-project.org/package=tactile}
-    }
+    % \item[qualpalr] {
+    %   Automatic generation of qualitative color palettes using color difference
+    %   algorithms
+    %
+    %   \url{https://CRAN.R-project.org/package=qualpalr}
+    %   }
 
 \end{description}
 
